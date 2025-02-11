@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Tüm sayfanın arka planı siyah */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e; /* Navbar arka planı siyah */
+    padding: 15px 50px;
+}
+
+/* Logo ve Yazı Yan Yana */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Logo boyutu */
+    margin-right: 10px; /* Yazı ile arasındaki boşluk */
+}
+
+.text-logo {
+    height: 30px; /* ESKOOL yazısı olan resim */
+}
+
+/* Menü öğelerini yatay hizala */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+/* Contact Now butonu */
+.contact-btn {
+    padding: 8px 15px;
+    border: 2px solid orange; /* Turuncu ince kenarlık */
+    border-radius: 20px; /* Kenarları oval yapmak için */
+    color: white; /* Yazı rengi beyaz */
+    font-size: 16px; /* Yazı boyutu */
+    font-weight: bold; /* Yazıyı kalın yap */
+    text-decoration: none; /* Altı çizili olmasını engelle */
+    transition: all 0.3s ease-in-out; /* Geçiş efekti */
+}
+
+.contact-btn:hover {
+    background-color: orange; /* Üzerine gelince turuncu arka plan */
+    color: black; /* Üzerine gelince yazı siyah */
+}
