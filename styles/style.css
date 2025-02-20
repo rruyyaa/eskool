@@ -11,73 +11,78 @@ body {
     padding: 0;
     background-color: #f5f5f5;
 }
-.about-us {
-    padding: 40px 20px;
+.what-we-do {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
     background: #EDEDED;
-    background-image: url('assets/ABOUT US.png');
-    display:flex;
+}
 
+.text-content {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.section-tag {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 1px;
 }
 
 h2 {
-    font-size: 24px;
-    color: #333;
-    display: flex;
+    font-size: 28px;
+    color: #222;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
 }
 
 .learn-more {
     background: transparent;
-    border :0cap solid black;
+    border: 1px solid black;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 10px;
-    display:flex;
+    margin-top: 20px;
 }
 
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px 0;
-    background-color: #f5f5f5;
+.image-content {
+    width: 50%;
+    position: relative;
 }
 
-.card {
-    width: 280px;
-    height: 300px;
+.image-content img {
+    width: 100%;
     border-radius: 10px;
-    color: black;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-size: cover;
-    background-position: center;
 }
 
-.card-1 {
-    background-image: url('assets/Group 84.png');
-    background-color: white;
-}
-
-.card-2 {
-    background-image: url('assets/Group 84.png');
-    background-color: #FF5722;
+.overlay-image {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
     color: white;
-    
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-.card-3 {
-    background-image: url('assets/Group 84.png');
-    background-color: #333;
-    color: white;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
-    .cards {
+    .what-we-do {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+    }
+    .text-content {
+        width: 100%;
+        padding-right: 0;
+    }
+    .image-content {
+        width: 100%;
     }
 }
 
