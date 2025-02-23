@@ -9,82 +9,69 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #111;
 }
-.what-we-do {
+.our-services {
+    background-color: #111; /* Arka plan */
+    color: white;
+    padding: 50px;
+    font-family: "Syne" ;
+    font-style:normal; /* Orijinal tasarımın fontuna benzer bir font */
+    max-width: 1200px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+    margin:  0 auto;
+}
+
+.our-services text {
+    width: 50%; /* Yazıları sol tarafa yay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Sol hizalama sağla */
+}
+
+.our-services h2 {
+    display:flex;
+    font-size: 24px;
+    color: orange; /* Turuncu renk */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 60px;
-    background: #EDEDED;
+    gap: 8px; /* Ok ile metin arasındaki boşluk */
 }
 
-.text-content {
-    width: 50%;
-    padding-right: 40px;
+.our-services .icon {
+    gap:8px;
+    font-size: 18px;
+    color: orange;
+    transform:translate(); 
+ 
 }
 
-.section-tag {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: gray;
-    letter-spacing: 1px;
+.our-services ul {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    color: white; /* Yazıyı görünür yap */
+    font-size: 18px;
 }
 
-h2 {
-    font-size: 28px;
-    color: #222;
+.our-services li {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
+.right-image{
+    width: 45%;
+    justify-content:flex-end; /* Resmi sağa yasla */
+    display: flex;/* İsteğe bağlı, sağdan boşluk bırakır */
 }
-
-.learn-more {
-    background: transparent;
-    border: 1px solid black;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.image-content {
-    width: 50%;
-    position: relative;
-}
-
-.image-content img {
-    width: 100%;
+.right-image img {
+    float: right;
+    max-width: 100%; /* Resmin genişliğini küçült */
     border-radius: 10px;
 }
-
-.overlay-image {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-
-/* Responsive */
-@media (max-width: 768px) {
-    .what-we-do {
-        flex-direction: column;
-        text-align: center;
-    }
-    .text-content {
-        width: 100%;
-        padding-right: 0;
-    }
-    .image-content {
-        width: 100%;
-    }
-}
-
-
 
