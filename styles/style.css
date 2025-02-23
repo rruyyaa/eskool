@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Genel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+}
+.our-services {
+    background-color: #111; /* Arka plan */
+    color: white;
+    padding: 50px;
+    font-family: "Syne" ;
+    font-style:normal; /* Orijinal tasarımın fontuna benzer bir font */
+    max-width: 1200px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+    margin:  0 auto;
+}
+
+.our-services text {
+    width: 50%; /* Yazıları sol tarafa yay */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Sol hizalama sağla */
+}
+
+.our-services h2 {
+    display:flex;
+    font-size: 24px;
+    color: orange; /* Turuncu renk */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Ok ile metin arasındaki boşluk */
+}
+
+.our-services .icon {
+    gap:8px;
+    font-size: 18px;
+    color: orange;
+    transform:translate(); 
+ 
+}
+
+.our-services ul {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    color: white; /* Yazıyı görünür yap */
+    font-size: 18px;
+}
+
+.our-services li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.right-image{
+    width: 45%;
+    justify-content:flex-end; /* Resmi sağa yasla */
+    display: flex;/* İsteğe bağlı, sağdan boşluk bırakır */
+}
+.right-image img {
+    float: right;
+    max-width: 100%; /* Resmin genişliğini küçült */
+    border-radius: 10px;
+}
+
