@@ -9,69 +9,103 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
+    background-color:f4f4f4;
 }
-.our-services {
-    background-color: #111; /* Arka plan */
-    color: white;
-    padding: 50px;
-    font-family: "Syne" ;
-    font-style:normal; /* Orijinal tasarımın fontuna benzer bir font */
-    max-width: 1200px;
-    display:flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100vh;
-    text-align: center;
-    margin:  0 auto;
-}
-
-.our-services text {
-    width: 50%; /* Yazıları sol tarafa yay */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Sol hizalama sağla */
-}
-
-.our-services h2 {
-    display:flex;
-    font-size: 24px;
-    color: orange; /* Turuncu renk */
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Ok ile metin arasındaki boşluk */
-}
-
-.our-services .icon {
-    gap:8px;
-    font-size: 18px;
-    color: orange;
-    transform:translate(); 
- 
-}
-
-.our-services ul {
-    align-items: center;
-    list-style: none;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-    color: white; /* Yazıyı görünür yap */
-    font-size: 18px;
+    text-align: center;
+}
+.news-letter-section{
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align:center;
+}
+.small-title {
+    display: block;
+    margin: 0 auto 10px;
+    width: 180px;
+}
+.hero-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.subscribe-form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.subscribe-form button:hover {
+    background-color: #e55a00;
+}
+.image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto;
+            grid-gap: 10px;
+            padding: 40px 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+}
+.image-grid img {
+    width: 100%;
+    height:100½;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
-.our-services li {
-    font-size: 18px;
-    margin-bottom: 10px;
+.image-grid img:nth-child(1) {
+    grid-column: span 1;
+    height: 250px;
 }
-
-.right-image{
-    width: 45%;
-    justify-content:flex-end; /* Resmi sağa yasla */
-    display: flex;/* İsteğe bağlı, sağdan boşluk bırakır */
+.image-grid img:nth-child(2) {
+    grid-column: span 1;
+    height: 250px;
 }
-.right-image img {
-    float: right;
-    max-width: 100%; /* Resmin genişliğini küçült */
-    border-radius: 10px;
+.image-grid img:nth-child(3) {
+    grid-column: span 1;
+    height: 250px;
 }
-
+.image-grid img:nth-child(4) {
+    grid-column: span 2;
+    height: 300px;
+}
+.image-grid img:nth-child(5) {
+    grid-column: span 1;
+    height: 300px;
+}
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image-grid img:nth-child(1),
+    .image-grid img:nth-child(2),
+    .image-grid img:nth-child(3),
+    .image-grid img:nth-child(4),
+    .image-grid img:nth-child(5) {
+        grid-column: span 1;
+        height: auto;
+    }
+}
