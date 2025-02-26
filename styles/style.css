@@ -17,95 +17,59 @@ body {
     padding: 0;
     text-align: center;
 }
-.news-letter-section{
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-    text-align:center;
-}
-.small-title {
-    display: block;
-    margin: 0 auto 10px;
-    width: 180px;
-}
-.hero-section h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-}
-.subscribe-form {
+
+.banner {
+    background-color: #f26522;
+    color: white;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-.subscribe-form input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-.subscribe-form button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.subscribe-form button:hover {
-    background-color: #e55a00;
-}
-.image-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto auto;
-            grid-gap: 10px;
-            padding: 40px 10px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #fff;
-}
-.image-grid img {
-    width: 100%;
-    height:100½;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
+    align-items: center;
+    height: 150px;
+    position: relative;
 }
 
-.image-grid img:nth-child(1) {
-    grid-column: span 1;
-    height: 250px;
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-family: "Syne";
+    font-style: normal;
+    text-align: center;
 }
-.image-grid img:nth-child(2) {
-    grid-column: span 1;
-    height: 250px;
+
+.text hr {
+    width: 50px;
+    border: 1px solid white;
+    align-items: center;
 }
-.image-grid img:nth-child(3) {
-    grid-column: span 1;
-    height: 250px;
+
+h2 {
+    font-size: 20px;
+    margin: 0;
 }
-.image-grid img:nth-child(4) {
-    grid-column: span 2;
-    height: 300px;
+
+.button-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right:20px;
 }
-.image-grid img:nth-child(5) {
-    grid-column: span 1;
-    height: 300px;
+
+.btn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-style: normal;
 }
-@media (max-width: 768px) {
-    .image-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .image-grid img:nth-child(1),
-    .image-grid img:nth-child(2),
-    .image-grid img:nth-child(3),
-    .image-grid img:nth-child(4),
-    .image-grid img:nth-child(5) {
-        grid-column: span 1;
-        height: auto;
-    }
+
+.btn:hover {
+    background: white;
+    color: #f26522;
 }
