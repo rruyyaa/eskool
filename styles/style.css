@@ -4,72 +4,75 @@
     box-sizing: border-box;
 }
 
-/* Genel Stiller */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:f4f4f4;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.banner {
-    background-color: #f26522;
-    color: white;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    position: relative;
+    min-height: 100vh;
+    background-color: #fff;
 }
 
-.text {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    font-family: "Syne";
-    font-style: normal;
+.benefits {
     text-align: center;
+    width: 80%;
+    font-family: "Syne";
+    font-size: 45px;
+    font-style: normal;
 }
 
-.text hr {
-    width: 50px;
-    border: 1px solid white;
+.benefits-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    font-family: "Syne";
+    font-size: 45px;
+    font-style: normal;
+}
+
+.benefit-item {
+    display: flex;
     align-items: center;
+    gap: 15px;
+    width: 30%;
+    border-right: 2px solid #f26522; /* Sağ kenarlık */
+    padding-right: 20px;
+    font-family: "Syne";
+    font-size: 45px;
+    font-style: normal;
+}
+
+.benefit-item:last-child {
+    border-right: none; /* Son öğenin kenarlığını kaldır */
+}
+
+.benefit-item img {
+    width: 40px; /* PNG numara boyutunu ayarla */
+    height: auto;
+}
+
+.content {
+    text-align: left;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
     margin: 0;
 }
 
-.button-container {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right:20px;
-}
-
-.btn {
-    background: none;
-    border: 1px solid white;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    text-decoration: none;
+p {
     font-size: 14px;
-    font-family: "Poppins";
-    font-style: normal;
-}
-
-.btn:hover {
-    background: white;
-    color: #f26522;
+    color: #555;
+    margin: 5px 0 0;
 }
