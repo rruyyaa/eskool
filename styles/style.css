@@ -6,73 +6,98 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #fff;
-}
-
-.benefits {
-    text-align: center;
-    width: 80%;
-    font-family: "Syne";
-    font-size: 45px;
-    font-style: normal;
-}
-
-.benefits-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 20px;
-    font-family: "Syne";
-    font-size: 45px;
-    font-style: normal;
-}
-
-.benefit-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    width: 30%;
-    border-right: 2px solid #f26522; /* Sağ kenarlık */
-    padding-right: 20px;
-    font-family: "Syne";
-    font-size: 45px;
-    font-style: normal;
-}
-
-.benefit-item:last-child {
-    border-right: none; /* Son öğenin kenarlığını kaldır */
-}
-
-.benefit-item img {
-    width: 40px; /* PNG numara boyutunu ayarla */
-    height: auto;
-}
-
-.content {
-    text-align: left;
-}
-
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #222;
+    height: 100vh;
+    background-color: #f4f4f4;
     margin: 0;
+    padding:20px;
 }
 
-p {
-    font-size: 14px;
-    color: #555;
-    margin: 5px 0 0;
+.testimonial {
+   display:flex;
+   flex-direction: row;
+    align-items: center;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    gap:20px;
+}
+
+/* Resim Alanı */
+.testimonial-image {
+    position: relative;
+    width: 120px;
+    height: 120px;
+flex-shrink: 0;
+   
+}
+
+.testimonial-image img {
+    width: 100%;
+    border-radius: 50%;
+    display:block;
+}
+
+
+
+/* Metin Alanı */
+.testimonial-text {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+    font-family:"Syne" Arial, Helvetica, sans-serif;
+    font-style:normal;
+    max-width: 600px;
+
+}
+
+/* Yön Tuşları */
+.testimonial-controls {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.arrow {
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+
+/* === RESPONSIVE DESIGN === */
+
+@media (max-width: 768px) {
+    .testimonial {
+        padding: 20px;
+    }
+
+    .testimonial-image {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-text {
+        padding: 16px;
+    }
+
+    .testimonial-controls {
+        margin-top: 15px;
+    }
 }
